@@ -4,7 +4,7 @@ class ValidatePassword {
     const MAX_LENGTH = 20;
     public function validLength($password){
         $passLength=strlen($password);
-        return $passLength>=self::MIN_LENGTH && $passLength<=self::MAX_LENGTH;
+        return ($passLength >= self::MIN_LENGTH && $passLength <= self::MAX_LENGTH);
     }
 }
 ?>
